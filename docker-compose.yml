@@ -1,0 +1,20 @@
+version: "3.4"
+services:
+  khedmat-nginx:
+    image: nginx:1.13
+    container_name: khedmat-nginx
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - khedmat-front-web
+  khedmat-front-web:
+    build: ./app/
+    container_name: khedmat-front-web
+    restart: always
+    ports:
+      - "4000:4000"
+      - "3031:3031"
+    command: "npm run start"
+  

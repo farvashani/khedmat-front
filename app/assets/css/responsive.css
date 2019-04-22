@@ -1,0 +1,36 @@
+@media screen and (max-width: 960px) {
+    .main-menu{
+        background: #343a40 !important;
+    }
+    .counter {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        color: #b7693a;
+        font-size: 30pt;
+        font-weight: bold;
+      
+      }
+      .carousel,
+.item,
+.active {
+  height: 100vh;
+}
+.navbar-nav{
+    text-align: center;
+}
+
+    
+      
+}
+@media screen and (max-width: 768px) {
+ 
+    .forms{
+        padding: 40px;
+    }
+    .form-control{
+        height: auto;
+    }
+}
