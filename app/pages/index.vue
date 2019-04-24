@@ -3,13 +3,15 @@
     <section class="container-fluid no-padding text-center">
       <div class="bg-home">
         <div class="bg-dark-home"></div>
-        <countdown class="counter" ref="countdown" :time="61 * 24 * 60 * 60 * 1000">
+        <CountDownTimer class="set-direction counter" end="June 5, 2019" showDays showHours showMinutes showSeconds></CountDownTimer>
+
+        <!-- <countdown class="counter" ref="countdown" :time="61 * 24 * 60 * 60 * 1000">
           .
           <template
             slot-scope="props"
             class="error-msg"
           >{{ props.seconds }} : {{ props.minutes }} : {{ props.hours }} : {{ props.days }}</template>
-        </countdown>
+        </countdown> -->
         <div class="full-slider">
           <b-carousel
             id="carousel-fade"
@@ -43,6 +45,7 @@
               <span class="highlight">اعتماد</span>
             </h3>
             <p class="sub-title">اعتماد گمشده این روزهای جامعه ما شده است.</p>
+
             <p>
               واژه ای کمرنگ در دنیای آلوده پیرامونی که تبدیل به ابزاری در جهت برد حداکثری منافع شخصی نمود
               پیدا کرده. راستش تفسیر واژه ها کمکی به ما نخواهد کرد و فقط میشه امیدوار بود به عملکرد ها و
@@ -144,12 +147,15 @@
 
 <script>
 import Header from "../components/Header";
+import CountDownTimer from "../components/CountDownTimer"
 
 // import MarqueeText from "vue-marquee-text-component";
 
 export default {
   components: {
-    Header
+    Header,
+    CountDownTimer
+
     // MarqueeText
   },
   mounted() {},

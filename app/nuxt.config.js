@@ -51,7 +51,8 @@ export default {
     { src: '~/plugins/vueTelInput', ssr: false },
     { src: '~/plugins/vueNotification', ssr: false },
     { src: '~/plugins/vueCounter', ssr: false },
-    { src: '~/plugins/vueMarque', ssr: false }
+    { src: '~/plugins/vueMarque', ssr: false },
+    { src: '~/plugins/vueTimer', ssr: false }
 
   ],
 
