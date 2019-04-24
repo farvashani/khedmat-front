@@ -170,6 +170,10 @@ li {
   color: #bf67b6;
   font-weight: bold;
 }
+.shrink {
+  padding: 0.3rem;
+  background: gray;
+}
 
 
 
@@ -287,7 +291,7 @@ a:hover {
 /* End Stye Elnaz */
 
 /* Start Footr */
-#myFooter {
+.myFooter {
   /* background-color: #331a41; */
   background: #8e4571;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #240b31, #8e4571);  /* Chrome 10-25, Safari 5.1-6 */
@@ -305,57 +309,57 @@ a:hover {
   margin-bottom: 10px;
 }
 
-#myFooter .row {
+.myFooter .row {
   margin: 0 85px;
 }
 
-#myFooter .footer-copyright {
+.myFooter .footer-copyright {
   background-color: #120b23;
   padding-top: 3px;
   padding-bottom: 3px;
   text-align: center;
 }
 
-#myFooter .footer-copyright p {
+.myFooter .footer-copyright p {
   margin: 10px;
   color: #ccc;
 }
 
-#myFooter .container-fluid {
+.myFooter .container-fluid {
   width: auto;
 }
 
-#myFooter ul {
+.myFooter ul {
   list-style-type: none;
   padding-right: 0;
   line-height: 1.7;
 }
 
-#myFooter h5 {
+.myFooter h5 {
   font-size: 18px;
   color: white;
   font-weight: bold;
   margin-top: 30px;
 }
 
-#myFooter a {
+.myFooter a {
   color: #d2d1d1;
   text-decoration: none;
 }
 
-#myFooter a:hover,
-#myFooter a:focus {
+.myFooter a:hover,
+.myFooter a:focus {
   text-decoration: none;
   color: white;
 }
 
-#myFooter .social-networks {
+.myFooter .social-networks {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 38px;
 }
 
-#myFooter .fa {
+.myFooter .fa {
   font-size: 30px;
   margin-right: 15px;
   margin-left: 20px;
@@ -371,43 +375,43 @@ a:hover {
   transition: color 0.2s;
 }
 
-#myFooter .fa-facebook:hover {
+.myFooter .fa-facebook:hover {
   color: #2b55ff;
 }
 
-#myFooter .fa-facebook:focus {
+.myFooter .fa-facebook:focus {
   color: #2b55ff;
 }
 
-#myFooter .fa-google-plus:hover {
+.myFooter .fa-google-plus:hover {
   color: red;
 }
 
-#myFooter .fa-google-plus:focus {
+.myFooter .fa-google-plus:focus {
   color: red;
 }
 
-#myFooter .fa-twitter:hover {
+.myFooter .fa-twitter:hover {
   color: #00aced;
 }
 
-#myFooter .fa-twitter:focus {
+.myFooter .fa-twitter:focus {
   color: #00aced;
 }
-#myFooter .fa-instagram:hover {
+.myFooter .fa-instagram:hover {
   color: #8e4571;
 }
 
-#myFooter .fa-instagram:focus {
+.myFooter .fa-instagram:focus {
   color: #240b31;
 }
 
 
 @media screen and (max-width: 767px) {
-  #myFooter {
+  .myFooter {
       text-align: center;
   }
-  #myFooter .row {
+  .myFooter .row {
       margin: 0;
   }
 }

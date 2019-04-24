@@ -174,7 +174,9 @@ export default {
 
     // MarqueeText
   },
-  mounted() {},
+  mounted() {
+    
+  },
   methods: {}
 };
 </script>
