@@ -1,6 +1,7 @@
 <template>
   <div>
-    <section class="container-fluid no-padding text-center">
+    
+    <section class="container-fluid no-padding text-center" id="home">
       <div class="bg-home">
         <div class="bg-dark-home"></div>
         <CountDownTimer
@@ -58,7 +59,7 @@
           </div>
           <div class="col-md-6 text-justify">
             <h3>
-              <span class="highlight">اعتماد</span>
+              <span>اعتماد</span>
             </h3>
             <p class="sub-title">اعتماد گمشده این روزهای جامعه ما شده است.</p>
 
@@ -77,7 +78,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="section-bg">
       <div class="container padding-responsive">
         <div class="row mt-5 no-margin">
           <div class="col-md-6">
@@ -111,7 +112,7 @@
           </div>
           <div class="col-md-6 text-justify">
             <h3>
-              <span class="highlight">خدمت</span>
+              <span>خدمت</span>
             </h3>
             <p class="sub-title">
               تفسیر این کلید واژه که سر لوحه کار ماست کاری بیهوده بوده و ضمن جلوگیری از اتلاف وقت سعی
@@ -124,17 +125,12 @@
       </div>
     </section>
 
-    <section>
-      <div class="container padding-responsive">
+    <section class="section-khedmat">
+      <div class="bg-dark-home"></div>
+      <div class="container padding-responsive section-khedmat-text">
         <div class="row mt-5 no-margin">
-          <div class="col-md-6">
-            <img
-              src="../assets/img/khedmat.jpeg"
-              alt="حمایت"
-              class="img-khedmat img-fluid-width border-radius"
-            >
-          </div>
-          <div class="col-md-6 text-justify border-speech">
+        
+          <div class="col-md-12 text-justify border-speech">
             <div>
               <h3>
                 <span>سخن با شما</span>
@@ -157,6 +153,7 @@
         </div>
       </div>
     </section>
+    <Footer/>
 
     <!-- end old landing -->
   </div>
@@ -165,13 +162,15 @@
 <script>
 import Header from "../components/Header";
 import CountDownTimer from "../components/CountDownTimer";
+import Footer from "../components/Footer";
 
 // import MarqueeText from "vue-marquee-text-component";
 
 export default {
   components: {
     Header,
-    CountDownTimer
+    CountDownTimer,
+    Footer
 
     // MarqueeText
   },

@@ -22,7 +22,13 @@
     text-align: center;
 }
 
-    
+.section-khedmat {
+    height: 750px;
+  }
+  
+  .section-khedmat-text {
+    top: 55%;
+  }
       
 }
 @media screen and (max-width: 768px) {
