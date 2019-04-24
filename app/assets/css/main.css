@@ -27,17 +27,14 @@ body {
 
 }
 
-.container-fluid {
-  background: #f7f7f7;
-}
 
 .container {
-  padding: 15px 0;
+  padding:  0;
   margin: 0 auto;
 }
 
 .main-container-form {
-  background: rgba(208, 205, 205, 0.6784313725490196);
+  background: rgba(165, 162, 162, 0.6784313725490196);
   border-radius: 5px;
   padding: 30px;
   margin: 10% auto;
@@ -160,7 +157,7 @@ li {
   background: transparent;
 }
 
-.forms .main-menu {
+.form-page .main-menu {
   background: #120b23 !important;
 }
 
@@ -297,7 +294,7 @@ a:hover {
   background: linear-gradient(to right, #240b31, #8e4571); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: white;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   text-align: right;
 }
 
@@ -313,7 +310,7 @@ a:hover {
 }
 
 #myFooter .footer-copyright {
-  background-color: rgba(51, 7, 66, 0.8313725490196079);
+  background-color: #120b23;
   padding-top: 3px;
   padding-bottom: 3px;
   text-align: center;
@@ -324,7 +321,7 @@ a:hover {
   color: #ccc;
 }
 
-#myFooter .container {
+#myFooter .container-fluid {
   width: auto;
 }
 

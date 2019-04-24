@@ -1,55 +1,60 @@
 <template>
-  <div class="forms">
+  <div class="form-page">
     <Header/>
-    <section class="container main-container-form set-direction">
-      <div>
-        <h3>تعیین رمز ورود</h3>
-        <div class="error-msg" v-if="errMsg !== null">{{errMsg}}</div>
+    <div class="forms">
+      <section class="container main-container-form set-direction">
+        <div>
+          <h3>تعیین رمز ورود</h3>
+          <div class="error-msg" v-if="errMsg !== null">{{errMsg}}</div>
 
-        <b-form @submit="onSubmit" v-if="show">
-          <b-input-group class="mt-3">
-            <b-form-input
-              id="input-1"
-              v-model="form.password"
-              :type="password_FieldType"
-              @keydown="clearErrMsg"
-              required
-              placeholder="رمز ورود"
-            ></b-form-input>
-            <b-input-group-append>
-              <b-button @click="switchVisibilityPass('pass')">
-                <i :class="password_FieldType === 'password' ? 'fa fa-eye' : 'fa fa-eye-slash'"></i>
-              </b-button>
-            </b-input-group-append>
-          </b-input-group>
+          <b-form @submit="onSubmit" v-if="show">
+            <b-input-group class="mt-3">
+              <b-form-input
+                id="input-1"
+                v-model="form.password"
+                :type="password_FieldType"
+                @keydown="clearErrMsg"
+                required
+                placeholder="رمز ورود"
+              ></b-form-input>
+              <b-input-group-append>
+                <b-button @click="switchVisibilityPass('pass')">
+                  <i :class="password_FieldType === 'password' ? 'fa fa-eye' : 'fa fa-eye-slash'"></i>
+                </b-button>
+              </b-input-group-append>
+            </b-input-group>
 
-          <b-input-group class="mt-3">
-            <b-form-input
-              id="input-2"
-              v-model="form.confirm_password"
-              :type="confirm_password_FieldType"
-              @keydown="clearErrMsg"
-              required
-              placeholder="تکرار رمز ورود"
-            ></b-form-input>
-            <b-input-group-append>
-              <b-button @click="switchVisibilityPass()">
-                <i
-                  :class="confirm_password_FieldType === 'password' ? 'fa fa-eye' : 'fa fa-eye-slash'"
-                ></i>
-              </b-button>
-            </b-input-group-append>
-          </b-input-group>
+            <b-input-group class="mt-3">
+              <b-form-input
+                id="input-2"
+                v-model="form.confirm_password"
+                :type="confirm_password_FieldType"
+                @keydown="clearErrMsg"
+                required
+                placeholder="تکرار رمز ورود"
+              ></b-form-input>
+              <b-input-group-append>
+                <b-button @click="switchVisibilityPass()">
+                  <i
+                    :class="confirm_password_FieldType === 'password' ? 'fa fa-eye' : 'fa fa-eye-slash'"
+                  ></i>
+                </b-button>
+              </b-input-group-append>
+            </b-input-group>
 
-          <b-button type="submit" variant="primary" class="mt-3 btn-form">ذخیره</b-button>
-        </b-form>
-      </div>
-    </section>
+            <b-button type="submit" variant="primary" class="mt-3 btn-form">ذخیره</b-button>
+          </b-form>
+        </div>
+      </section>
+    </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+
 export default {
   data() {
     return {
@@ -64,7 +69,8 @@ export default {
     };
   },
   components: {
-    Header
+    Header,
+    Footer
   },
 
   methods: {
@@ -74,7 +80,7 @@ export default {
         this.errMsg = "رمز ورود با تکرار أن مطابقت ندارد!";
       } else {
         this.errMsg = null;
-         let obj = {
+        let obj = {
           Password: this.form.password,
           Username: localStorage.getItem("mobile")
         };

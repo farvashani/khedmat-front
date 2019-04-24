@@ -1,6 +1,6 @@
 <template>
 <footer id="myFooter">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3">
                     <h5>شروع</h5>
