@@ -3,7 +3,14 @@
     <section class="container-fluid no-padding text-center">
       <div class="bg-home">
         <div class="bg-dark-home"></div>
-        <CountDownTimer class="set-direction counter" end="June 5, 2019" showDays showHours showMinutes showSeconds></CountDownTimer>
+        <CountDownTimer
+          class="set-direction counter"
+          end="June 5, 2019"
+          showDays
+          showHours
+          showMinutes
+          showSeconds
+        ></CountDownTimer>
 
         <!-- <countdown class="counter" ref="countdown" :time="61 * 24 * 60 * 60 * 1000">
           .
@@ -11,7 +18,7 @@
             slot-scope="props"
             class="error-msg"
           >{{ props.seconds }} : {{ props.minutes }} : {{ props.hours }} : {{ props.days }}</template>
-        </countdown> -->
+        </countdown>-->
         <div class="full-slider">
           <b-carousel
             id="carousel-fade"
@@ -26,8 +33,14 @@
               caption="خدمت تنها بزرگراه بدون محدودیت سرعت ایران"
               img-src="https://picsum.photos/id/10/1024/530"
             ></b-carousel-slide>
-            <b-carousel-slide caption=" خدمت مکان و زمان ندارد" img-src="https://picsum.photos/id/12/1024/530"></b-carousel-slide>
-            <b-carousel-slide caption="خدمت واگیر دارد" img-src="https://picsum.photos/id/22/1024/530"></b-carousel-slide>
+            <b-carousel-slide
+              caption=" خدمت مکان و زمان ندارد"
+              img-src="https://picsum.photos/id/12/1024/530"
+            ></b-carousel-slide>
+            <b-carousel-slide
+              caption="خدمت واگیر دارد"
+              img-src="https://picsum.photos/id/22/1024/530"
+            ></b-carousel-slide>
           </b-carousel>
         </div>
 
@@ -40,6 +53,9 @@
     <section>
       <div class="container padding-responsive">
         <div class="row mt-5 no-margin">
+          <div class="col-md-6">
+            <img src="../assets/img/etemad.jpg" class="img-fluid-width border-radius">
+          </div>
           <div class="col-md-6 text-justify">
             <h3>
               <span class="highlight">اعتماد</span>
@@ -57,9 +73,6 @@
               سخت هست و نه آسان بلکه ابزار خودش را لازم دارد.
             </p>
           </div>
-          <div class="col-md-6">
-            <img src="../assets/img/etemad.jpg" class="img-fluid border-radius">
-          </div>
         </div>
       </div>
     </section>
@@ -68,7 +81,7 @@
       <div class="container padding-responsive">
         <div class="row mt-5 no-margin">
           <div class="col-md-6">
-            <img src="../assets/img/gharz.jpg" alt="حمایت" class="img-fluid border-radius">
+            <img src="../assets/img/gharz.jpg" alt="حمایت" class="img-fluid-width border-radius">
           </div>
           <div class="col-md-6 text-justify">
             <h3>
@@ -93,6 +106,9 @@
     <section>
       <div class="container padding-responsive">
         <div class="row mt-5 no-margin">
+          <div class="col-md-6">
+            <img src="../assets/img/khedmat21.jpg" class="img-fluid-width border-radius">
+          </div>
           <div class="col-md-6 text-justify">
             <h3>
               <span class="highlight">خدمت</span>
@@ -104,18 +120,19 @@
               کوری ندارد.
             </p>
           </div>
-          <div class="col-md-6">
-            <img src="../assets/img/khedmat21.jpg" class="img-fluid border-radius">
-          </div>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container padding-responsive">
-        <div class="row mt-5">
-          <div class="manager-pic col-md-6">
-            <img src="../assets/img/khedmat.jpeg" alt="حمایت" class="img-khedmat border-radius">
+        <div class="row mt-5 no-margin">
+          <div class="col-md-6">
+            <img
+              src="../assets/img/khedmat.jpeg"
+              alt="حمایت"
+              class="img-khedmat img-fluid-width border-radius"
+            >
           </div>
           <div class="col-md-6 text-justify border-speech">
             <div>
@@ -147,7 +164,7 @@
 
 <script>
 import Header from "../components/Header";
-import CountDownTimer from "../components/CountDownTimer"
+import CountDownTimer from "../components/CountDownTimer";
 
 // import MarqueeText from "vue-marquee-text-component";
 

@@ -83,10 +83,16 @@ input {
 .hidden {
   display: none;
 }
-.auto-height{
+
+.auto-height {
   height: auto !important;
 }
-a,.navbar-dark .navbar-nav .nav-link,button,ul,li{
+
+a,
+.navbar-dark .navbar-nav .nav-link,
+button,
+ul,
+li {
   cursor: pointer;
 }
 
@@ -105,7 +111,8 @@ a,.navbar-dark .navbar-nav .nav-link,button,ul,li{
 
 .bg-home {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 650px;
 }
 
 .bg-dark-home {
@@ -121,12 +128,12 @@ a,.navbar-dark .navbar-nav .nav-link,button,ul,li{
 /* Style Slider */
 .carousel {
   text-shadow: rgb(0, 0, 0) 0px 0px 2px;
-  position: absolute;
+  /* position: absolute;
   left: 0px;
   right: 0px;
   top: 0px;
   bottom: 0px;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 /* .carousel,
@@ -146,14 +153,24 @@ a,.navbar-dark .navbar-nav .nav-link,button,ul,li{
 .carousel-indicators {
   display: none;
 }
-.img-fluid{
-  height: 100% !important;
+
+.img-fluid {
+  height: 650px !important;
+}
+
+.img-fluid-width {
+  max-width: 100%;
+  border-radius: 3px;
+  -webkit-box-shadow: 4px 6px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 6px 13px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 6px 13px 0px rgba(0, 0, 0, 0.75);
+  margin: 20px auto;
 }
 
 
 /* Style Header Main Menu */
 .main-menu {
-  background: transparent ;
+  background: transparent;
 }
 
 .forms .main-menu {
@@ -178,6 +195,7 @@ a,.navbar-dark .navbar-nav .nav-link,button,ul,li{
   background: #481f47;
   border: 1px solid #481f47;
 }
+
 .selection[data-v-12b2283d] {
   font-size: .2em;
 }
@@ -190,8 +208,8 @@ a,.navbar-dark .navbar-nav .nav-link,button,ul,li{
 /* Start Style Elnaz */
 
 section {
-  background:#661c69;
-  padding:15px;
+  background: #661c69;
+  padding: 15px;
 }
 
 a {
@@ -252,12 +270,10 @@ a:hover {
   color: #ffffff;
   margin-bottom: 20px;
 }
-.img-khedmat{
+
+.img-khedmat {
   width: 100%;
   height: auto;
 }
 
 /* End Stye Elnaz */
-
-
-
