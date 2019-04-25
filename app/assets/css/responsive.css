@@ -1,4 +1,7 @@
 @media screen and (max-width: 960px) {
+  .touch {
+    -webkit-overflow-scrolling: touch;
+  }
     .main-menu{
         background: #343a40 !important;
     }

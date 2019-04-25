@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="touch">
     
     <section class="container-fluid no-padding text-center" id="home">
       <div class="bg-home">
